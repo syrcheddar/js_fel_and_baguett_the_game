@@ -12,11 +12,11 @@ function SideBar(props) {
 	const [picture, setPicture] = useState(() => {
 		switch (localStorage.getItem("class")) {
 			case "1":
-				return process.env.PUBLIC_URL + "pictures/chars/sit-small.png";
+				return process.env.PUBLIC_URL + "/pictures/chars/sit-small.png";
 			case "2":
-				return process.env.PUBLIC_URL + "pictures/chars/oi-small.png";
+				return process.env.PUBLIC_URL + "/pictures/chars/oi-small.png";
 			case "3":
-				return process.env.PUBLIC_URL + "pictures/chars/kyr-small.png";
+				return process.env.PUBLIC_URL + "/pictures/chars/kyr-small.png";
 			default:
 				return "";
 		}

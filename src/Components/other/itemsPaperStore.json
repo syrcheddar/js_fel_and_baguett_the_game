@@ -3,57 +3,57 @@
 		"name": "Klávesnice Steva Jobse",
 		"itemInfo": "Prý kabelem od téhle klávesnice sám Steve bičoval své první zaměstnance",
 		"itemType": "zbran",
-		"src": " pictures/items/weapons/keyboard.png",
-		"sound": "sounds/axehit.mp3"
+		"src": "/pictures/items/weapons/keyboard.png",
+		"sound": "/sounds/axehit.mp3"
 	},
 	{
 		"name": "Sešit nevim koho",
 		"itemInfo": "Ať už ho měl kdokoliv, musel to být nýmand, sešit je prázdný...",
 		"itemType": "zbran",
-		"src": " pictures/items/weapons/notebook.png",
-		"sound": "sounds/cartoonthrow.mp3"
+		"src": "/pictures/items/weapons/notebook.png",
+		"sound": "/sounds/cartoonthrow.mp3"
 	},
 	{
 		"name": "Roboruka Finna člověka",
 		"itemInfo": "Tahle nevybouchla",
 		"itemType": "zbran",
-		"src": " pictures/items/weapons/robo-arm.png",
-		"sound": "sounds/drop.wav"
+		"src": "/pictures/items/weapons/robo-arm.png",
+		"sound": "/sounds/drop.wav"
 	},
 	{
 		"name": "Batoh trapáka",
 		"itemInfo": "Nic moc",
 		"itemType": "bagl",
-		"src": " pictures/items/armor/backpack.png"
+		"src": "/pictures/items/armor/backpack.png"
 	},
 	{
 		"name": "Baťužek Arnolda Schwarzennegra",
 		"itemInfo": "Když byl Arnold ještě malá školačka, nosil tenhle baťužek do školy. Kdyby se mu pořád vešel na záda, nosil by ho do teď.",
 		"itemType": "bagl",
-		"src": " pictures/items/armor/briefcase.png"
+		"src": "/pictures/items/armor/briefcase.png"
 	},
 	{
 		"name": "SWAG kaufland taška",
 		"itemInfo": "Tato swag taška se válela ve škarpě když jel prodavač na kole za svou přítelkyní do Strašnic.",
 		"itemType": "bagl",
-		"src": " pictures/items/armor/kaufland.png"
+		"src": "/pictures/items/armor/kaufland.png"
 	},
 	{
 		"name": "Prokopova kšiltovka",
 		"itemInfo": "Tuhle kšiltovku už Prokop nikdy neuvidí.",
 		"itemType": "capec",
-		"src": " pictures/items/armor/cap.png"
+		"src": "/pictures/items/armor/cap.png"
 	},
 	{
 		"name": "Klobouk Harrisona Forda",
 		"itemInfo": "Harrisonovy se často ztrácely klobouky, nikdo neví jak je to možné, ale jeden se objevil i tady... Možná dva.",
 		"itemType": "capec",
-		"src": " pictures/items/armor/cowboy.png"
+		"src": "/pictures/items/armor/cowboy.png"
 	},
 	{
 		"name": "Kapuce Mozkomora",
 		"itemInfo": "Když Harry Potter padal z koštěte po kontaktu s Mozkomorem, 'neúmyslně' mozkomorovi vzal to jediné co měl.",
 		"itemType": "capec",
-		"src": " pictures/items/armor/cloak.png"
+		"src": "/pictures/items/armor/cloak.png"
 	}
 ]

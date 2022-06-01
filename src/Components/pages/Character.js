@@ -13,11 +13,11 @@ function Character(props) {
 	const [picture, setPicture] = useState(() => {
 		switch (localStorage.getItem("class")) {
 			case "1":
-				return process.env.PUBLIC_URL + "pictures/chars/sit-picture.png";
+				return process.env.PUBLIC_URL + "/pictures/chars/sit-picture.png";
 			case "2":
-				return process.env.PUBLIC_URL + "pictures/chars/oi-picture.png";
+				return process.env.PUBLIC_URL + "/pictures/chars/oi-picture.png";
 			case "3":
-				return process.env.PUBLIC_URL + "pictures/chars/kyr-picture.png";
+				return process.env.PUBLIC_URL + "/pictures/chars/kyr-picture.png";
 			default:
 				return "";
 		}

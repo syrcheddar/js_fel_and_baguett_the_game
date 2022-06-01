@@ -45,7 +45,7 @@ function Zkouskove(props) {
 			maxDmg: 20 * lvl,
 			sound: "sounds/punch.mp3",
 		};
-		weapon = process.env.PUBLIC_URL + "pictures/items/weapons/fist.png";
+		weapon = process.env.PUBLIC_URL + "/pictures/items/weapons/fist.png";
 	} else weapon = process.env.PUBLIC_URL + weaponItem.src;
 	const [userHP, setUserHP] = useState(stats[3] * 4 * (lvl + 1));
 	const [enemyHP, setEnemyHP] = useState(boss.stats[3] * 4 * (boss.lvl + 1));

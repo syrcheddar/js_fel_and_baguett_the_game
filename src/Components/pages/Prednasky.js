@@ -67,7 +67,7 @@ function Prednasky(props) {
 					}}
 				>
 					<img
-						src={process.env.PUBLIC_URL + "pictures/chars/cvut.png"}
+						src={process.env.PUBLIC_URL + "/pictures/chars/cvut.png"}
 						alt=" "
 						style={{
 							height: "20vh",

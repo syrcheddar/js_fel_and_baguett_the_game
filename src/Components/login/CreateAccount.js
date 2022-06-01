@@ -118,7 +118,7 @@ function CreateAccount() {
 								>
 									<img
 										src={
-											process.env.PUBLIC_URL + "pictures/chars/kyr-picture.png"
+											process.env.PUBLIC_URL + "/pictures/chars/kyr-picture.png"
 										}
 										alt=" "
 										className="img"
@@ -136,7 +136,7 @@ function CreateAccount() {
 								>
 									<img
 										src={
-											process.env.PUBLIC_URL + "pictures/chars/sit-picture.png"
+											process.env.PUBLIC_URL + "/pictures/chars/sit-picture.png"
 										}
 										alt=" "
 										className="img"
@@ -155,7 +155,7 @@ function CreateAccount() {
 								>
 									<img
 										src={
-											process.env.PUBLIC_URL + "pictures/chars/oi-picture.png"
+											process.env.PUBLIC_URL + "/pictures/chars/oi-picture.png"
 										}
 										alt=" "
 										className="img"
