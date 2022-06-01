@@ -1,0 +1,157 @@
+.css-11lq3yg-MuiGrid-root {
+	flex-wrap: nowrap !important;
+}
+.item a {
+	height: 100%;
+	display: Flex;
+	align-items: center;
+	justify-content: center;
+}
+.item-box > div:nth-of-type(odd) {
+	background-color: rgb(94, 94, 94);
+}
+.item-box > div:nth-of-type(even) {
+	background-color: grey;
+}
+.item-box-odd > div:nth-of-type(odd) {
+	background-color: grey;
+}
+.item-box-odd > div:nth-of-type(even) {
+	background-color: rgb(94, 94, 94);
+}
+.item {
+	height: 100%;
+	overflow: hidden;
+}
+.App {
+	text-align: center;
+}
+body {
+	overflow: hidden;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media screen and (orientation: portrait) {
+	.css-11lq3yg-MuiGrid-root {
+		display: none !important;
+	}
+	.landscape {
+		display: block !important;
+	}
+}
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+.gameShopItemInfo {
+	z-index: 10;
+	color: black;
+	max-width: 30vw !important;
+	display: none;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 0px solid;
+	border-radius: 4px;
+	transform: translateY(-31.5vh);
+	padding: 15px;
+}
+
+.gameGearItemInfo {
+	z-index: 10;
+	color: black;
+	max-width: 30vw !important;
+	display: none;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 0px solid;
+	border-radius: 4px;
+	transform: translateY(+15vh);
+	padding: 15px;
+}
+
+.gameOwnedItemInfo {
+	z-index: 10;
+	color: black;
+	max-width: 30vw !important;
+	display: none;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 0px solid;
+	border-radius: 4px;
+	transform: translateY(+28vh);
+	padding: 15px;
+}
+
+.statInfo {
+	z-index: 10;
+	color: black;
+	max-width: 30vw !important;
+	display: none;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 0px solid;
+	border-radius: 4px;
+	transform: translateY(-18vh);
+	padding: 15px;
+}
+.stat:hover .statInfo {
+	display: block;
+}
+.gameItem:hover .gameItemInfo {
+	display: block;
+}
+.gameItem:active .gameItemInfo {
+	display: none !important;
+}
+
+h4,
+h4 {
+	font-size: 2.5vh;
+	margin-top: 0vh;
+	margin-bottom: 2vh;
+}
+h5,
+h5 {
+	font-size: 2vh;
+	margin-top: 0vh;
+	margin-bottom: 1vh;
+}
+h6 {
+	font-size: 1.5vh;
+	margin-top: 1vh;
+	margin-left: 4vw;
+	margin-bottom: 1vh;
+}

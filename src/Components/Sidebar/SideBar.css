@@ -1,0 +1,93 @@
+.side-bar {
+	height: 100vh;
+	background-color: #a1a1a1;
+}
+.photo {
+	font-size: 2vh;
+	display: flex;
+	width: 100%;
+	background: rgba(236, 139, 139, 0);
+}
+.footer {
+	display: flex;
+	width: 100%;
+	background-color: #a1a1a1;
+}
+.menu {
+	display: flex;
+	width: 100%;
+}
+.buttons {
+	display: flex;
+	width: 100%;
+	height: 100% !important;
+	justify-content: space-evenly;
+}
+.buttn {
+	font-size: 2vh;
+	height: 15%;
+}
+.buttn1:hover {
+	background-color: grey !important;
+	transition: all 0.3 ease;
+}
+h3 {
+	font-size: 1.8vh;
+	font-weight: lighter;
+}
+.picture {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.coins {
+	display: flex;
+	justify-content: space-around;
+}
+.coinss div {
+	display: flex;
+	align-items: center;
+	text-align: left;
+}
+.picture img {
+	height: 15vh;
+}
+.footer {
+	font-size: 2vh;
+	align-items: center;
+	padding: 0 15px;
+	justify-content: space-between;
+}
+#charIco:hover {
+	box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+	transition: all 0.2s ease;
+}
+.cvut:hover {
+	filter: drop-shadow(0px 7px 29px rgba(50, 50, 54, 0.767));
+	transition: all 0.2s ease;
+}
+.statC {
+	text-align: left;
+	margin-top: 3vh;
+	margin-left: 1vw;
+}
+.statC > div {
+	margin-top: 2vh;
+}
+.enemyName {
+	font-size: 2vh;
+}
+.close:hover {
+	filter: drop-shadow(0px 7px 10px rgba(50, 50, 54, 0.9));
+	transition: all 0.2s ease;
+}
+
+.bttnselected {
+	background-color: #135597 !important;
+}
+.start {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+}

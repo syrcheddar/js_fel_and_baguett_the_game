@@ -1,0 +1,23 @@
+#weaponLeft {
+	display: block !important;
+	height: 15vh;
+    transform: translateX(10vw);
+	animation: punchRight 1230ms linear infinite;
+}
+
+#weaponRight {
+	display: block !important;
+	height: 15vh;
+    transform: translateX(10vw);
+	animation: punchRight 1230ms linear infinite;
+}
+
+@keyframes punchRight {
+	0% { 	transform:  translateX(10vw) translateY(0vh) rotate(0deg); }
+	50%   {  transform: translateX(20vw) translateY(-5vh) rotate(30deg); }
+	100%   {  transform: translateX(30vw) translateY(5vh) rotate(60deg); }
+}
+.hpBar {
+	height: 300px;
+	background: linear-gradient(to right, #a2ea4c attr(hps px), #07aa91);
+  }

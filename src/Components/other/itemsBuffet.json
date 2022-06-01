@@ -1,0 +1,38 @@
+[
+	{
+		"name": "AirForcy",
+		"itemInfo": "S těmahle botama prý doletíš až na měsíc.",
+		"itemType": "boty",
+		"src": " pictures/items/armor/nike.png"
+	},
+	{
+		"name": "Formálky",
+		"itemInfo": "Jdeš na zkoušku? Ber je!",
+		"itemType": "boty",
+		"src": " pictures/items/armor/formal.png"
+	},
+	{
+		"name": "Pantofle",
+		"itemInfo": "Hned mám chuť jít spát k Richovi.",
+		"itemType": "boty",
+		"src": " pictures/items/armor/slippers.png"
+	},
+	{
+		"name": "Golf bageta",
+		"itemInfo": "Někdo ji miluje, někdo ne, schválně jako pojede tobě.",
+		"itemType": "bageta",
+		"src": " pictures/items/bagety/golf.jpg"
+	},
+	{
+		"name": "Kuřecí stripsy",
+		"itemInfo": "Nejlepší cena výkon. No neber to.",
+		"itemType": "bageta",
+		"src": " pictures/items/bagety/stripsy.jpg"
+	},
+	{
+		"name": "Sírový labužník",
+		"itemInfo": "Nikdy jsem ji neměl, nevím jestli ji zkusit.",
+		"itemType": "bageta",
+		"src": " pictures/items/bagety/labuznik.jpg"
+	}
+]

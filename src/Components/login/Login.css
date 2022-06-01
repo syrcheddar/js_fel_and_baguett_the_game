@@ -1,0 +1,102 @@
+body {
+	max-width: 100% !important;
+	background-color: #dbdbdb;
+}
+.root {
+}
+.info h1 {
+	text-align: center;
+	font-size: 6vh;
+}
+.continue {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.create-account {
+	height: 100vh;
+}
+.inf {
+	padding: 0px 20px;
+}
+.inf h1 {
+	font-size: 4vh;
+}
+.inf h2 {
+	font-size: 6vh;
+	margin: 5px;
+}
+.inf article {
+	font-size: 2vh;
+}
+.class {
+	height: 100%;
+}
+.classs {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+}
+.images {
+	transition: all 0.4s ease;
+}
+.images img {
+	border: 2px solid transparent;
+}
+.images:hover img {
+	border: 2px solid blue;
+}
+.classs-left {
+	transform: translate(-25.5vw);
+}
+.classs-right {
+	transform: translate(25.5vw);
+}
+.grow-left {
+	transform: scale(120%) translate(-20.3vw);
+}
+.grow-center {
+	transform: scale(120%);
+}
+.grow-right {
+	transform: scale(120%) translate(20.3vw);
+}
+.grow-right > img {
+	box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+.grow-left > img {
+	box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+.grow-center > img {
+	box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+.button {
+	font-size: 4vh !important;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+}
+.bttns {
+	max-width: 100% !important;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.bttns button {
+	font-size: 3vh !important;
+	width: 15%;
+}
+.img {
+	height: 35vh;
+}
+
+.center-move-left {
+	transform: translateX(600%);
+}
+.carousel-cell-left {
+	transform: translateX(-100%);
+}
+.carousel-cell-right {
+	transform: translateX(100%);
+}

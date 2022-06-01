@@ -1,0 +1,68 @@
+[
+	{
+		"name": "Huřťák",
+		"weapon": "pictures/items/weapons/keyboard.png",
+		"src": "pictures/chars/hurtak.jpg",
+		"stats": [100, 100, 100, 200, 100, 200],
+		"battleStat": 2,
+		"lvl": 10,
+		"minDmg": 100,
+		"maxDmg": 200,
+		"sound": "sounds/knifethrow.mp3"
+	},
+	{
+		"name": "Náplava",
+		"weapon": "pictures/items/weapons/notebook.png",
+		"src": "pictures/chars/naplava.jpg",
+		"stats": [200, 200, 400, 200, 300, 400],
+		"battleStat": 2,
+		"lvl": 20,
+		"minDmg": 200,
+		"maxDmg": 400,
+		"sound": "sounds/swpool.mp3"
+	},
+	{
+		"name": "Velebil",
+		"weapon": "pictures/items/weapons/dukaz.png",
+		"src": "pictures/chars/velebil.jpg",
+		"stats": [600, 400, 400, 400, 500, 500],
+		"battleStat": 0,
+		"lvl": 30,
+		"minDmg": 300,
+		"maxDmg": 600,
+		"sound": "sounds/waterbucket.mp3"
+	},
+	{
+		"name": "Ingrid",
+		"weapon": "pictures/items/weapons/fist.png",
+		"src": "pictures/chars/ingrid.jpg",
+		"stats": [400, 500, 800, 400, 500, 500],
+		"battleStat": 2,
+		"lvl": 40,
+		"minDmg": 400,
+		"maxDmg": 800,
+		"sound": "sounds/swpool.mp3"
+	},
+	{
+		"name": "Doc. Tišer",
+		"weapon": "pictures/items/weapons/glasswiper.png",
+		"src": "pictures/chars/tiser.jpg",
+		"stats": [1000, 400, 400, 400, 1000, 700],
+		"battleStat": 0,
+		"lvl": 50,
+		"minDmg": 500,
+		"maxDmg": 1000,
+		"sound": "sounds/knifethrow.mp3"
+	},
+	{
+		"name": "Richta",
+		"weapon": "pictures/items/weapons/zzz.png",
+		"src": "pictures/chars/richta.jpg",
+		"stats": [300, 300, 600, 10000, 1000, 800],
+		"battleStat": 2,
+		"lvl": 100,
+		"minDmg": 1000,
+		"maxDmg": 2000,
+		"sound": "sounds/snore.mp3"
+	}
+]

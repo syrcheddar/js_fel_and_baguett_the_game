@@ -1,0 +1,21 @@
+.stat {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 10px;
+	padding-top: 2vh;
+}
+.stat > button {
+	font-size: 3vh;
+	background-color: #1976d2;
+	color: white;
+}
+.stat > button:hover {
+	background-color: #145494;
+}
+.nadpiskv {
+	font-size: 3vh;
+	align-items: center;
+	padding-left: 1vw;
+	padding-top: 1vh;
+}

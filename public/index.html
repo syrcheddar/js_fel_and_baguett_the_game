@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="Shakes and fidget parody" />
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+		<link rel="icon" href="%PUBLIC_URL%/pictures/chars/sit-small.png" />
+		<title>Fel and Baguett</title>
+	</head>
+	<body onload="addEvent()">
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<h2 class="landscape" style="display: none">
+			Turn your phone into landscape mode
+		</h2>
+		<div id="root"></div>
+		<script>
+			function addEvent() {
+				document.body.addEventListener("click", play);
+			}
+			function play() {
+				var audio = document.getElementById("audio");
+				audio.play();
+			}
+		</script>
+		<audio id="audio" src="sounds/mouseClick.mp3  "></audio>
+		<!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+	</body>
+</html>

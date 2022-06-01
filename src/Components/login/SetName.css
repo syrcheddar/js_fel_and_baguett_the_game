@@ -1,0 +1,38 @@
+.login-form {
+	background-color: #afafaf;
+	border-radius: 10pt;
+}
+.login-form div {
+	height: 100%;
+}
+.nadpis {
+	text-align: center;
+	padding: 15px;
+	font-size: 5vh;
+}
+.inputy {
+	display: flex;
+	flex-direction: column !important;
+	align-items: center;
+	align-content: space-between;
+	justify-content: space-evenly;
+}
+.input {
+	display: flex;
+	align-content: space-evenly;
+	align-items: center;
+	justify-content: space-around;
+}
+.bttn {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+#username {
+    font-size: 4vh;
+    height: 5vh;
+    width: 15vw;
+    border: 0 ;
+    border-radius: 5px;
+	background-color: rgb(231, 231, 231);
+}
