@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Grid } from "@mui/material";
 import { useState, useEffect } from "react";
-import { BrowserRouter as HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SideBar from "./Components/Sidebar/SideBar";
 import CreateAccount from "./Components/login/CreateAccount";
 import SetName from "./Components/login/SetName";
@@ -25,7 +25,7 @@ function App() {
 	};
 	return logged ? (
 		<DndProvider backend={HTML5Backend}>
-			<HashRouter>
+			<Router basename="/js_fel_and_baguett_the_game">
 				<Grid container>
 					<Grid item xs={2}>
 						<SideBar
@@ -69,10 +69,10 @@ function App() {
 						</Routes>
 					</Grid>
 				</Grid>
-			</HashRouter>
+			</Router>
 		</DndProvider>
 	) : (
-		<HashRouter>
+		<Router basename="/js_fel_and_baguett_the_game">
 			<Routes>
 				<Route exact path="/" element={<CreateAccount />} />
 				<Route
@@ -82,7 +82,7 @@ function App() {
 				/>
 				<Route path="*" element={<NotFound />} />
 			</Routes>
-		</HashRouter>
+		</Router>
 	);
 }
 
