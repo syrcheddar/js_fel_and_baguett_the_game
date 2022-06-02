@@ -16,9 +16,9 @@ function Cviceni(props) {
 
 	const stats = JSON.parse(localStorage.getItem("stats"));
 	const classes = [
-		"pictures/chars/sit-picture.png",
-		"pictures/chars/oi-picture.png",
-		"pictures/chars/kyr-picture.png",
+		"/pictures/chars/sit-picture.png",
+		"/pictures/chars/oi-picture.png",
+		"/pictures/chars/kyr-picture.png",
 	];
 	const [leftID, setLeftID] = useState(null);
 	const [rightID, setRightID] = useState("");
@@ -28,7 +28,7 @@ function Cviceni(props) {
 		weaponItem = {
 			minDmg: lvl * 10,
 			maxDmg: 20 * lvl,
-			sound: "sounds/punch.mp3",
+			sound: "/sounds/punch.mp3",
 		};
 		weapon = process.env.PUBLIC_URL + "/pictures/items/weapons/fist.png";
 	} else weapon = process.env.PUBLIC_URL + weaponItem.src;
@@ -157,7 +157,10 @@ function Cviceni(props) {
 			container
 			style={{
 				height: "100%",
-				backgroundImage: "url('pictures/locations/cviceni.jpg')",
+				backgroundImage:
+					"url('" +
+					process.env.PUBLIC_URL +
+					"/pictures/locations/cviceni.jpg')",
 				backgroundRepeat: "no-repeat",
 				backgroundSize: "cover",
 			}}
@@ -245,7 +248,10 @@ function Cviceni(props) {
 			container
 			style={{
 				height: "100%",
-				backgroundImage: "url('pictures/locations/cviceni.jpg')",
+				backgroundImage:
+					"url('" +
+					process.env.PUBLIC_URL +
+					"/pictures/locations/cviceni.jpg')",
 				backgroundRepeat: "no-repeat",
 				backgroundSize: "cover",
 			}}
@@ -341,7 +347,7 @@ function Cviceni(props) {
 							>
 								<img
 									id={rightID}
-									src={process.env.PUBLIC_URL + weapon}
+									src={weapon}
 									alt=" "
 									style={{
 										position: "absolute",

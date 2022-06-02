@@ -71,7 +71,7 @@ function Papirnictvi(props) {
 						<Grid item xs={7} style={{ overflow: "hidden" }}>
 							<SellItem
 								sellItem={(item, number) => sellItem(item, number)}
-								src="pictures/locations/papirnictvi.jpg"
+								src="/pictures/locations/papirnictvi.jpg"
 							/>
 						</Grid>
 						<Grid item xs={3} style={{ display: "flex" }}>

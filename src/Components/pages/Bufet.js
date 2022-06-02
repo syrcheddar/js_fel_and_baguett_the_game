@@ -18,7 +18,7 @@ function Bufet(props) {
 		change ? setChange(false) : setChange(true);
 	};
 	const sellItem = (item, invSlot) => {
-		sound.play()
+		sound.play();
 		if (JSON.parse(localStorage.getItem("inventory"))[invSlot] != null) {
 			localStorage.setItem(
 				"dollary",
@@ -70,7 +70,7 @@ function Bufet(props) {
 						<Grid item xs={7} style={{ overflow: "hidden" }}>
 							<SellItem
 								sellItem={(item, number) => sellItem(item, number)}
-								src="pictures/locations/bufet.jpg"
+								src="/pictures/locations/bufet.jpg"
 							/>
 						</Grid>
 						<Grid item xs={3} style={{ display: "flex" }}>
