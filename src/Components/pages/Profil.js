@@ -9,7 +9,7 @@ function Profil(props) {
 	return (
 		<Grid container style={{ width: "auto", height: "100%" }}>
 			<Character onChange={props.onChange} />
-			<Grid item xs={7}>
+			<Grid item xs={7} style={{ maxHeight: "100%" }}>
 				<Grid
 					container
 					direction="column"
@@ -24,7 +24,13 @@ function Profil(props) {
 						backgroundSize: "contain",
 					}}
 				>
-					<TopItems onChange={props.onChange} refreshAll={() => refreshAll()} />
+					<TopItems
+						onChange={props.onChange}
+						refreshAll={() => refreshAll()}
+						style={{
+							maxHeight: "16.6667%",
+						}}
+					/>
 					<Grid item xs={6}></Grid>
 					<Grid item xs={3}></Grid>
 				</Grid>

@@ -248,7 +248,7 @@ function Character(props) {
 									</Grid>
 								</Grid>
 							</Grid>
-							<Grid item xs={3}>
+							<Grid item xs={3} style={{ maxHeight: "25%" }}>
 								<Grid
 									container
 									style={{ width: "auto", height: "100%" }}
@@ -310,7 +310,7 @@ function Character(props) {
 													onClick={(e) => handleAdd(e.target.id)}
 												>
 													<div className="price" style={{ display: "none" }}>
-														Cena: {prices[0]}
+														Cena: {prices[0] + 1}
 													</div>
 													+
 												</Button>
@@ -355,7 +355,7 @@ function Character(props) {
 													onClick={(e) => handleAdd(e.target.id)}
 												>
 													<div className="price" style={{ display: "none" }}>
-														Cena: {prices[1]}
+														Cena: {prices[1] + 1}
 													</div>
 													+
 												</Button>
@@ -400,7 +400,7 @@ function Character(props) {
 													onClick={(e) => handleAdd(e.target.id)}
 												>
 													<div className="price" style={{ display: "none" }}>
-														Cena: {prices[2]}
+														Cena: {prices[2] + 1}
 													</div>
 													+
 												</Button>
@@ -454,7 +454,7 @@ function Character(props) {
 													onClick={(e) => handleAdd(e.target.id)}
 												>
 													<div className="price" style={{ display: "none" }}>
-														Cena: {prices[3]}
+														Cena: {prices[3] + 1}
 													</div>
 													+
 												</Button>
@@ -480,7 +480,7 @@ function Character(props) {
 													onClick={(e) => handleAdd(e.target.id)}
 												>
 													<div className="price" style={{ display: "none" }}>
-														Cena: {prices[4]}
+														Cena: {prices[4] + 1}
 													</div>
 													+
 												</Button>

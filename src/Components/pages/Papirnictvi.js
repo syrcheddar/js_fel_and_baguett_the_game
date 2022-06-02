@@ -54,7 +54,7 @@ function Papirnictvi(props) {
 						refreshAll();
 					}}
 				/>
-				<Grid item xs={7}>
+				<Grid item xs={7} style={{ maxHeight: "100%" }}>
 					<Grid
 						container
 						direction="column"
@@ -67,6 +67,9 @@ function Papirnictvi(props) {
 								refreshAll();
 							}}
 							shopNumber={1}
+							style={{
+								maxHeight: "16.6667%",
+							}}
 						/>
 						<Grid item xs={7} style={{ overflow: "hidden" }}>
 							<SellItem

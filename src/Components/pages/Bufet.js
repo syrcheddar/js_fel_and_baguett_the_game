@@ -53,7 +53,7 @@ function Bufet(props) {
 						refreshAll();
 					}}
 				/>
-				<Grid item xs={7}>
+				<Grid item xs={7} style={{ maxHeight: "100%" }}>
 					<Grid
 						container
 						direction="column"
@@ -66,6 +66,9 @@ function Bufet(props) {
 								refreshAll();
 							}}
 							shopNumber={0}
+							style={{
+								maxHeight: "16.6667%",
+							}}
 						/>
 						<Grid item xs={7} style={{ overflow: "hidden" }}>
 							<SellItem
