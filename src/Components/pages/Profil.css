@@ -2,8 +2,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: 10px;
+	padding-left: 1vw;
 	padding-top: 2vh;
+	font-size: 2vh;
 }
 .stat > button {
 	font-size: 3vh;
@@ -29,4 +30,12 @@
 }
 .buttonStat:hover .price {
 	display: block !important;
+}
+.buttonStat {
+	font-size: 2vh;
+	height: 5vh;
+	min-width: 2vw !important;
+}
+.buttonStat > span {
+	width: 0;
 }

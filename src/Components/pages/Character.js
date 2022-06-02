@@ -156,7 +156,7 @@ function Character(props) {
 											direction="column"
 											style={{ width: "auto", height: "100%" }}
 										>
-											<Grid item xs={9}>
+											<Grid item xs={9} style={{ maxHeight: "75%" }}>
 												<img src={picture} style={{ width: "100%" }} alt=" " />
 											</Grid>
 											<Grid
@@ -478,6 +478,7 @@ function Character(props) {
 													className="buttonStat"
 													id={4}
 													onClick={(e) => handleAdd(e.target.id)}
+													size="small"
 												>
 													<div className="price" style={{ display: "none" }}>
 														Cena: {prices[4] + 1}
@@ -501,7 +502,12 @@ function Character(props) {
 											</Grid>
 											<Grid item xs={4} className="stat">
 												Duchapřítomnost: {stats[5].toLocaleString("cs")}
-												<Button id={5} style={{ visibility: "hidden" }}>
+												<Button
+													id={5}
+													style={{ visibility: "hidden" }}
+													size="small"
+													className="buttonStat"
+												>
 													+
 												</Button>
 												<div className="statInfo">

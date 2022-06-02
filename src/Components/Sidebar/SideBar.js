@@ -80,7 +80,14 @@ function SideBar(props) {
 					</Grid>
 				</Grid>
 			</Grid>
-			<Grid item xs={8} className="menu">
+			<Grid
+				item
+				xs={8}
+				className="menu"
+				style={{
+					height: "66.666667%",
+				}}
+			>
 				<ButtonGroup
 					disableElevation
 					variant="contained"
@@ -105,7 +112,7 @@ function SideBar(props) {
 					</Button>
 				</ButtonGroup>
 			</Grid>
-			<Grid item xs={1} className="footer">
+			<Grid item xs={1} className="footer" style={{ maxHeigth: "8.333333vh" }}>
 				<Button
 					className="buttn buttn1"
 					onClick={reset}
@@ -115,6 +122,7 @@ function SideBar(props) {
 						height: "100%",
 						backgroundColor: "#747478",
 						maxHeight: "100%",
+						maxWidth: "100%",
 					}}
 				>
 					<h3> Restartovat hru</h3>

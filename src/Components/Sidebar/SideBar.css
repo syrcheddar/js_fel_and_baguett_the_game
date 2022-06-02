@@ -23,6 +23,9 @@
 	height: 100% !important;
 	justify-content: space-evenly;
 }
+.buttons > button {
+	font-size: 2vh;
+}
 .buttn {
 	font-size: 2vh;
 	height: 15%;
@@ -56,7 +59,7 @@ h3 {
 .footer {
 	font-size: 2vh;
 	align-items: center;
-	padding: 0 15px;
+	padding: 0 1vw;
 	justify-content: space-between;
 }
 #charIco:hover {
