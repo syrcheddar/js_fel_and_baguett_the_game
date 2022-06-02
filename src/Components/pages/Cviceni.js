@@ -76,6 +76,7 @@ function Cviceni(props) {
 				crit *
 				(1 - armor);
 			dmg -= stats[localStorage.getItem("battleStat")] / 2;
+			dmg = Math.round(dmg);
 			if (dmg < 0) dmg = 1;
 			setEnemyHP(enemyHP - dmg);
 			setLeftID("");
@@ -99,6 +100,7 @@ function Cviceni(props) {
 				crit *
 				(1 - armor);
 			dmg -= stats[localStorage.getItem("battleStat")] / 2;
+			dmg = Math.round(dmg);
 			if (dmg < 0) dmg = 1;
 			setUserHP(userHP - dmg);
 			setLeftID("weaponLeft");

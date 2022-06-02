@@ -5,6 +5,7 @@ import GearPlace from "../other/Items/GearPlace";
 import GearItem from "../other/Items/GearItem";
 
 function Character(props) {
+	let prices = JSON.parse(localStorage.getItem("prices"));
 	let sound = new Audio();
 	sound.src = process.env.PUBLIC_URL + "/sounds/drop.wav";
 	const [inventory, setInventory] = useState(
@@ -34,14 +35,16 @@ function Character(props) {
 	const [gear, setGear] = useState(JSON.parse(localStorage.getItem("gear")));
 
 	const handleAdd = (e) => {
-		if (+localStorage.getItem("dollary") - stats[e] >= 0) {
+		if (+localStorage.getItem("dollary") - prices[e] >= 0) {
 			const newStats = stats;
 			newStats[e] = newStats[e] + 1;
 			setStats(newStats);
+			prices[e] += 1;
+			localStorage.setItem("prices", JSON.stringify(prices));
 			localStorage.setItem("stats", JSON.stringify(newStats));
 			localStorage.setItem(
 				"dollary",
-				+localStorage.getItem("dollary") - +stats[e]
+				+localStorage.getItem("dollary") - +prices[e]
 			);
 			refresh();
 			props.onChange();
@@ -301,7 +304,14 @@ function Character(props) {
 										>
 											<Grid item xs={4} className="stat">
 												Matika: {stats[0].toLocaleString("cs")}
-												<Button id={0} onClick={(e) => handleAdd(e.target.id)}>
+												<Button
+													className="buttonStat"
+													id={0}
+													onClick={(e) => handleAdd(e.target.id)}
+												>
+													<div className="price" style={{ display: "none" }}>
+														Cena: {prices[0]}
+													</div>
 													+
 												</Button>
 												{+localStorage.getItem("battleStat") === 0 ? (
@@ -309,7 +319,8 @@ function Character(props) {
 														<h4>Matika</h4>
 														<h5>
 															Z matiky se pro tvoji classu počítá požkození.
-															Vzorec pro výpočet požkození je: Matika * 5.
+															Vzorec pro výpočet požkození je: Požkození zbraně
+															* (Matika+1)/10 *0.5 .
 														</h5>
 														<h5>
 															Aktuální požkození:{" "}
@@ -338,7 +349,14 @@ function Character(props) {
 											</Grid>
 											<Grid item xs={4} className="stat">
 												Fyzika: {stats[1].toLocaleString("cs")}
-												<Button id={1} onClick={(e) => handleAdd(e.target.id)}>
+												<Button
+													className="buttonStat"
+													id={1}
+													onClick={(e) => handleAdd(e.target.id)}
+												>
+													<div className="price" style={{ display: "none" }}>
+														Cena: {prices[1]}
+													</div>
 													+
 												</Button>
 												{+localStorage.getItem("battleStat") === 1 ? (
@@ -376,7 +394,14 @@ function Character(props) {
 											</Grid>
 											<Grid item xs={4} className="stat">
 												Programování: {stats[2].toLocaleString("cs")}
-												<Button id={2} onClick={(e) => handleAdd(e.target.id)}>
+												<Button
+													className="buttonStat"
+													id={2}
+													onClick={(e) => handleAdd(e.target.id)}
+												>
+													<div className="price" style={{ display: "none" }}>
+														Cena: {prices[2]}
+													</div>
 													+
 												</Button>
 												{+localStorage.getItem("battleStat") === 2 ? (
@@ -385,7 +410,7 @@ function Character(props) {
 														<h5>
 															Z programování se pro tvoji classu počítá
 															požkození. Vzorec pro výpočet požkození je:
-															Programování * 5.
+															Požkození zbraně * (Programování+1)/10 *0.5.
 														</h5>
 														<h5>
 															Aktuální požkození:{" "}
@@ -423,7 +448,14 @@ function Character(props) {
 										>
 											<Grid item xs={4} className="stat">
 												Vůle k životu: {stats[3].toLocaleString("cs")}
-												<Button id={3} onClick={(e) => handleAdd(e.target.id)}>
+												<Button
+													className="buttonStat"
+													id={3}
+													onClick={(e) => handleAdd(e.target.id)}
+												>
+													<div className="price" style={{ display: "none" }}>
+														Cena: {prices[3]}
+													</div>
 													+
 												</Button>
 												<div className="statInfo">
@@ -442,7 +474,14 @@ function Character(props) {
 											</Grid>
 											<Grid item xs={4} className="stat">
 												"Mozková kapacita": {stats[4].toLocaleString("cs")}
-												<Button id={4} onClick={(e) => handleAdd(e.target.id)}>
+												<Button
+													className="buttonStat"
+													id={4}
+													onClick={(e) => handleAdd(e.target.id)}
+												>
+													<div className="price" style={{ display: "none" }}>
+														Cena: {prices[4]}
+													</div>
 													+
 												</Button>
 												<div className="statInfo">
@@ -462,7 +501,7 @@ function Character(props) {
 											</Grid>
 											<Grid item xs={4} className="stat">
 												Duchapřítomnost: {stats[5].toLocaleString("cs")}
-												<Button id={4} style={{ visibility: "hidden" }}>
+												<Button id={5} style={{ visibility: "hidden" }}>
 													+
 												</Button>
 												<div className="statInfo">

@@ -101,6 +101,7 @@ function Zkouskove(props) {
 				crit *
 				(1 - armor);
 			dmg -= boss.stats[+localStorage.getItem("battleStat")] / 2;
+			dmg = Math.round(dmg);
 			if (dmg < 0) dmg = 1;
 			setEnemyHP(enemyHP - dmg);
 			setLeftID("");
@@ -124,6 +125,7 @@ function Zkouskove(props) {
 				crit *
 				(1 - armor);
 			dmg -= stats[boss.battleStat] / 2;
+			dmg = Math.round(dmg);
 			if (dmg < 0) dmg = 1;
 			setUserHP(userHP - dmg);
 			setLeftID("weaponLeft");
@@ -272,9 +274,10 @@ function Zkouskove(props) {
 			container
 			style={{
 				height: "100%",
-				backgroundImage: "url('" +
-				process.env.PUBLIC_URL +
-				"/pictures/locations/cviceni.jpg')",
+				backgroundImage:
+					"url('" +
+					process.env.PUBLIC_URL +
+					"/pictures/locations/cviceni.jpg')",
 				backgroundRepeat: "no-repeat",
 				backgroundSize: "cover",
 			}}

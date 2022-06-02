@@ -65,14 +65,17 @@ function CreateAccount() {
 		switch (chosenClass) {
 			case 1:
 				localStorage.setItem("stats", JSON.stringify([1, 1, 1, 1, 1, 1]));
+				localStorage.setItem("prices", JSON.stringify([1, 1, 1, 1, 1, 1]));
 				localStorage.setItem("battleStat", 2);
 				break;
 			case 2:
 				localStorage.setItem("stats", JSON.stringify([1, 1, 1, 1, 1, 3]));
+				localStorage.setItem("prices", JSON.stringify([1, 1, 1, 1, 1, 3]));
 				localStorage.setItem("battleStat", 0);
 				break;
 			case 3:
 				localStorage.setItem("stats", JSON.stringify([1, 1, 1, 1, 1, 5]));
+				localStorage.setItem("prices", JSON.stringify([1, 1, 1, 1, 1, 5]));
 				localStorage.setItem("battleStat", 1);
 				break;
 			default:
@@ -89,9 +92,13 @@ function CreateAccount() {
 					<Grid item xs={4} className="inf">
 						<h2>O hře:</h2>
 						<article>
-							Vyber si svoji classu, svůj obor na FELu a vydej se vzhůru za dobrodružstvím. Čekají tě hodiny na přednáškách... Vydělávej dollary a kredity... 
-							Kupuj bagety, boty, zbraně... Obětuj krev slzy a pot u tabule na cvičení, kde jsi Ty sám svým největším nepřítelem...
-							Jestli jsi uspěl se ale ukáže až u zkoušky, kde na tebe čeká nejeden kantor. Poraž je všechny a uspěj v Fel and baguett.
+							Vyber si svoji classu, svůj obor na FELu a vydej se vzhůru za
+							dobrodružstvím. Čekají tě hodiny na přednáškách... Vydělávej
+							dollary a kredity... Kupuj bagety, boty, zbraně... Obětuj krev
+							slzy a pot u tabule na cvičení, kde jsi Ty sám svým největším
+							nepřítelem... Jestli jsi uspěl se ale ukáže až u zkoušky, kde na
+							tebe čeká nejeden kantor. Poraž je všechny a uspěj v Fel and
+							baguett.
 						</article>
 						<h1>{chosenClassName}</h1>
 						<article>
