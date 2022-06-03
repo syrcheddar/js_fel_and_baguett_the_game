@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/js_fel_and_baguett_the_game/static/css/main.98695809.css",
-    "main.js": "/js_fel_and_baguett_the_game/static/js/main.6cae4d4d.js",
+    "main.js": "/js_fel_and_baguett_the_game/static/js/main.d27274a7.js",
     "static/js/787.1f2f0a54.chunk.js": "/js_fel_and_baguett_the_game/static/js/787.1f2f0a54.chunk.js",
     "index.html": "/js_fel_and_baguett_the_game/index.html",
     "main.98695809.css.map": "/js_fel_and_baguett_the_game/static/css/main.98695809.css.map",
-    "main.6cae4d4d.js.map": "/js_fel_and_baguett_the_game/static/js/main.6cae4d4d.js.map",
+    "main.d27274a7.js.map": "/js_fel_and_baguett_the_game/static/js/main.d27274a7.js.map",
     "787.1f2f0a54.chunk.js.map": "/js_fel_and_baguett_the_game/static/js/787.1f2f0a54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98695809.css",
-    "static/js/main.6cae4d4d.js"
+    "static/js/main.d27274a7.js"
   ]
 }
