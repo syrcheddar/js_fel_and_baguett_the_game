@@ -103,7 +103,7 @@ function Character(props) {
 					direction="column"
 					style={{ width: "auto", height: "100%" }}
 				>
-					<Grid item xs={7}>
+					<Grid item xs={7} style={{ maxHeight: "58.333333%" }}>
 						<Grid
 							container
 							direction="column"
